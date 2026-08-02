@@ -2,7 +2,7 @@
 
 ![HeroBanner](/images/AD-Attack-Detection.jpg)
 
->> This project demonstrates how Active Directory reconnaissance and authentication activity can be detected using Sysmon and Wazuh in a Windows domain environment.
+> This project demonstrates how Active Directory reconnaissance and authentication activity can be detected using Sysmon and Wazuh in a Windows domain environment.
 
 ## Project Overview
 
