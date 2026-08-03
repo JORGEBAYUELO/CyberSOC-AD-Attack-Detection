@@ -101,7 +101,7 @@ The objective was to establish a known-good baseline before beginning reconnaiss
 
 ---
 
-📷 Screenshot Placeholder
+Screenshot Placeholder
 
 ```
 Insert Windows baseline screenshots here
@@ -130,7 +130,7 @@ Output was saved locally on the Kali VM.
 
 ---
 
-📷 Screenshot Placeholder
+Screenshot Placeholder
 
 ```
 Insert Nmap Host Discovery screenshot
