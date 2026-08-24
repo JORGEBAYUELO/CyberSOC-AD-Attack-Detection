@@ -165,13 +165,7 @@ The discovery of SMB provided a realistic path for controlled authentication tes
 
 ### Service Enumeration
 
-> **Screenshot Placeholder**
->
-> Add screenshot showing service discovery / Nmap enumeration.
->
-> Suggested filename:
->
-> `Screenshots/05-service-discovery.png`
+![Service Discovery](/images/service-discovery.png)
 
 ---
 
@@ -186,22 +180,14 @@ Example syntax used during controlled authentication testing:
 ```bash
 netexec smb 192.168.100.20 \
 -u 'emma.davis' \
--p '<TEST_PASSWORD>'
+-p 'Password123!'
 ```
-
-Passwords used in the lab are intentionally excluded from this repository.
 
 The purpose of this activity was not exploitation. The objective was to generate controlled Windows authentication telemetry that could subsequently be analyzed through the endpoint and SIEM.
 
 ### Kali Authentication Activity
 
-> **Screenshot Placeholder**
->
-> Add screenshot showing NetExec authentication activity from Kali.
->
-> Suggested filename:
->
-> `Screenshots/06-netexec-authentication.png`
+![NetExec Authentication](/images/netexec-authentication.png)
 
 ---
 
@@ -245,13 +231,7 @@ Logon Type `3` represents a network logon, which was consistent with the SMB aut
 
 ### Windows Event ID 4625
 
-> **Screenshot Placeholder**
->
-> Add screenshot showing the PowerShell Event ID 4625 query.
->
-> Suggested filename:
->
-> `Screenshots/07-windows-event-4625.png`
+![Windows Event 4625](/images/windows-event-4625.png)
 
 ---
 
@@ -287,25 +267,16 @@ This confirmed that the endpoint and SIEM were observing the same authentication
 
 ### Wazuh Authentication Events
 
-> **Screenshot Placeholder**
->
-> Add screenshot showing authentication events in Wazuh.
->
-> Suggested filename:
->
-> `Screenshots/08-wazuh-authentication-events.png`
+![Wazuh Authentication Events 01](/images/wazuh-authentication-events-01.png)
+![Wazuh Authentication Events 02](/images/wazuh-authentication-events-02.png)
 
 ### Endpoint and SIEM Timestamp Correlation
 
-> **Screenshot Placeholder**
->
-> Add screenshots demonstrating matching timestamps between the Windows Security event and Wazuh.
->
-> Suggested filenames:
->
-> `Screenshots/09-windows-event-correlation.png`
->
-> `Screenshots/10-wazuh-event-correlation.png`
+![Windows Event Correlation](/images/windows-event-correlation.png)
+
+![Wazuh Event Correlation](/images/wazuh-event-correlation.png)
+
+![Wazuh Event Correlation 02](/images/wazuh-event-correlation-02.png)
 
 ---
 
@@ -339,13 +310,7 @@ The telemetry established that Wazuh could see individual failed authentication 
 
 ### Multiple Authentication Failures
 
-> **Screenshot Placeholder**
->
-> Add screenshot showing multiple Event ID 4625 events in Wazuh.
->
-> Suggested filename:
->
-> `Screenshots/11-multiple-authentication-failures.png`
+![Wazuh Event Correlation](/images/wazuh-event-correlation.png)
 
 ---
 
@@ -395,13 +360,7 @@ Without this condition, unrelated authentication failures from different systems
 
 ### Custom Rule Configuration
 
-> **Screenshot Placeholder**
->
-> Add screenshot showing Rule `100100` in `local_rules.xml`.
->
-> Suggested filename:
->
-> `Screenshots/12-custom-wazuh-rule.png`
+![Custom Wazuh Rule](/images/custom-wazuh-rule.png)
 
 The rule configuration was validated successfully and the Wazuh manager was restarted before testing.
 
