@@ -411,23 +411,11 @@ This confirmed that the detection successfully identified the intended behavior.
 
 ### Successful Rule Trigger
 
-> **Screenshot Placeholder**
->
-> Add screenshot showing the individual authentication failures followed by Rule `100100`.
->
-> Suggested filename:
->
-> `Screenshots/13-rule-100100-positive-control.png`
+![Rule 100100 Positive Control](/images/rule-100100-positive-control.png)
 
 ### Rule Details and MITRE Mapping
 
-> **Screenshot Placeholder**
->
-> Add screenshot showing Rule `100100`, Rule Level 10, T1110, Credential Access, and Brute Force.
->
-> Suggested filename:
->
-> `Screenshots/14-rule-100100-mitre.png`
+![Rule 100100 Mitre](/images/rule-100100-mitre.png)
 
 ---
 
@@ -472,27 +460,15 @@ This distinction reduces the likelihood that unrelated authentication failures f
 
 ### Negative Control
 
-> **Screenshot Placeholder**
->
-> Add screenshot showing individual Rule `60122` authentication failures from the negative control without a new Rule `100100` correlation.
->
-> Suggested filename:
->
-> `Screenshots/15-negative-control.png`
+![Negative Control](/images/negative-control.png)
 
 ### Source IP Validation
 
-> **Screenshot Placeholder**
->
-> Add screenshot showing event details from one of the alternate source IP addresses used during negative testing.
->
-> Suggested filename:
->
-> `Screenshots/16-negative-control-source-ip.png`
+![Negative Control Source IP](/images/negative-control-source-ip.png)
 
 ---
 
-# Stage 6E — SOC Investigation
+# Phase 7 — SOC Investigation
 
 Following successful detection engineering and validation, a final controlled attack sequence was generated from `KALI-ATTACKER01`.
 
@@ -524,13 +500,9 @@ Potential Password Guessing
 
 ### Final Detection
 
-> **Screenshot Placeholder**
->
-> Add screenshot showing the final sequence of authentication failures and the Rule `100100` detection.
->
-> Suggested filename:
->
-> `Screenshots/17-final-detection-timeline.png`
+![Final Detection Timeline 01](/images/final-detection-timeline-01.png)
+
+![Final Detection Timeline 02](/images/final-detection-timeline-02.png)
 
 ---
 
@@ -563,23 +535,11 @@ The destination endpoint `WIN11-CLIENT01` was the monitored Windows system recei
 
 ### Authentication Event Details
 
-> **Screenshot Placeholder**
->
-> Add screenshot showing the Wazuh document details including source IP, target account, Event ID, NTLM, and Logon Type.
->
-> Suggested filename:
->
-> `Screenshots/18-final-event-details.png`
+![Final Detection Timeline 01](/images/final-detection-timeline-01.png)
 
 ### Detection and MITRE Details
 
-> **Screenshot Placeholder**
->
-> Add screenshot showing Rule `100100`, frequency, level, MITRE ID, tactic, and technique.
->
-> Suggested filename:
->
-> `Screenshots/19-final-detection-details.png`
+![Final Detection Timeline 02](/images/final-detection-timeline-02.png)
 
 ---
 
