@@ -66,13 +66,7 @@ The Domain Controller was intentionally left without a Wazuh agent for this proj
 
 ### Architecture Diagram
 
-> **Screenshot Placeholder**
->
-> Add lab architecture or VMware topology screenshot here.
->
-> Suggested filename:
->
-> `Screenshots/01-lab-architecture.png`
+![Architectural Diagram](/images/Foundational-Architectural-Diagram.jpg)
 
 ---
 
@@ -80,7 +74,7 @@ The Domain Controller was intentionally left without a Wazuh agent for this proj
 
 The `cybersoc.lab` Active Directory environment contains organizational units representing a small enterprise environment.
 
-Examples include:
+OUs include:
 
 ```text
 Admin
@@ -117,23 +111,11 @@ The Linux based Wazuh server was not joined to the Active Directory domain. As a
 
 ### Active Directory Structure
 
-> **Screenshot Placeholder**
->
-> Add screenshot showing the Active Directory OU and group structure.
->
-> Suggested filename:
->
-> `Screenshots/02-active-directory-structure.png`
+![Active Directory Structure](/images/ad-structure.png)
 
 ### User Security Group Membership
 
-> **Screenshot Placeholder**
->
-> Add screenshot showing `emma.davis` and the HR security group membership.
->
-> Suggested filename:
->
-> `Screenshots/03-user-group-membership.png`
+![User Group Membership](/images/user-group-membership.png)
 
 ---
 
@@ -145,7 +127,7 @@ The Kali system was placed on the isolated CyberSOC lab network and used to perf
 
 Attack and reconnaissance output generated during the project remained inside the Kali VM.
 
-Examples included:
+Files included:
 
 ```text
 01-nmap-host-discovery.txt
@@ -167,13 +149,7 @@ The objective was to identify potential Windows systems before performing more t
 
 ### Host Discovery
 
-> **Screenshot Placeholder**
->
-> Add Kali screenshot showing Nmap host discovery.
->
-> Suggested filename:
->
-> `Screenshots/04-nmap-host-discovery.png`
+![Nmap Host Discovery](/images/nmap-host-discovery.png)
 
 ---
 
